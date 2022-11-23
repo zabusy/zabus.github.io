@@ -1,0 +1,220 @@
+<html>
+<head>
+ <meta charset="utf-8">
+    <style>
+	
+        body {
+    background-color: #E489EE;
+    color: #d000ff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px; 
+    margin-left:60px;}
+
+        #container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    float:center; } 
+
+    #gora {
+	margin:40px;
+	 text-align:center;
+    float:center; 
+    font-family:Bradley Hand, cursive;
+    font-size:70px;
+    width: 500px;
+    }
+    
+	a {color:#000000;
+	text-decoration: none;}
+
+
+     .zółty {
+   float:left;
+   margin: 20px; 
+    width: 200px;
+    height:200px ;
+    background-color:hotpink;
+	font-size:30px;
+	text-align:center}
+		
+		
+   .niebieski{
+    float: left;
+    margin:20px;
+    width:200px;
+    height: 200px;
+    background-color: hotpink;
+    text-align: center;
+	font-size:30px}
+
+   .roz{
+   float: left;
+    margin:20px;
+	width:200px;
+	height: 200px;
+    counter-set: 20px;
+    background-color: hotpink;
+    text-align: center;
+	font-size:30px}
+         
+   .zolty{
+   float: left;
+    margin:20px;
+	width:200px;
+	height: 200px;
+   counter-set:20px;
+    background-color: hotpink;
+    text-align: center;
+	font-size:30px}  
+  
+        
+	.obraz{
+	position:absolute;
+	bottom:0px;
+	left:0px;}	
+	
+	
+	/*------NAPIS-W-RAMCE-----*/
+	 #blok {
+        position:relative;
+        width:500px;
+        height:2.2em;
+        line-height:2.2em;
+        margin:0 auto;
+        border:3px solid #F300FF;
+        font-size:1.5em;
+        background-color:#EB6EF1;
+        overflow:hidden;
+      }
+
+      #blok > p {
+        position:absolute;
+        margin:0;
+        white-space:nowrap;
+        animation:przesun 30s linear infinite;
+        -webkit-animation:przesun 30s linear infinite; /* dla Google Chrome, Safari, Opera 15+ */
+      }
+
+      #blok > p:hover {
+        animation-play-state:paused;
+        -webkit-animation-play-state:paused;
+      }
+      
+      /* ------------ANIMACJA-PRZESUN------------ */
+      @keyframes przesun
+      {
+        0% { transform:translateX(0); padding-left:110%; }
+        100% { transform:translateX(-100%); padding-left:110%; }
+      }
+
+      @-webkit-keyframes przesun /* dla Google Chrome, Safari, Opera 15+ */
+      {
+        0% { -webkit-transform:translateX(0); padding-left:110%; }
+        100% { -webkit-transform:translateX(-100%); padding-left:110%; }
+      }	
+	 /*------------LŚNIĄCE-GUZIKI-----------*/
+	 
+	 
+	 .wrapper {
+        display: block;
+     position: left;
+	   text-align: center;
+     margin: 25px;
+	   font-size:30px;
+     float:left;
+     transform: translate(-50%, -50%);
+}
+.button{
+    text-decoration: none;
+    text-align: center;
+    color:  hotpink;
+    border: 2px solid hotpink;
+    border-radius: 4px;
+    position: relative;
+    width: 200px;
+    line-height: 200px;
+    display: inline-block;
+    font-family: Arial;
+    font-weight: 600;
+    overflow: hidden;
+}
+.button:before {
+    content: '';
+    background-color:#E489EE;
+    height: 100%;
+    width: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -70px;
+    transform: skewX(-45deg) translateX(0px);
+    transition: none;
+  }
+.button:hover{
+    background-color:  hotpink;
+    color: #ffffff;
+    border-bottom: 2px solid #D70ACE;
+}
+
+.button:hover:before{
+    transform: skewX(-45deg) translateX(250px);
+    transition: all 0.4s ease-in;
+}
+	 
+
+        </style>
+</head>
+<title>Moje portfolio :></title>
+<body>
+   <div id="gora">Dominika~Portfolio~</div>
+   
+   <div id="blok">
+   <p> Strony które zrobiłam(nie każda jest dobra):</p>
+   </div>
+   
+   
+   
+   <div id="container">
+
+            <br><br><br><br><br>
+         <div class="wrapper">
+          <a href="ol.html" class="button">Scam</a>
+        </div>  
+
+        
+         <div class="wrapper">
+         <a href="index.html" class="button">jakaś strona</a>
+         </div>
+
+         
+         
+         <div class="wrapper">
+         <a href="index2.html" class="button">ciachas</a>
+         </div>
+
+
+
+         
+         <div class="wrapper">
+            <a href="strona.html" class="button">animacja</a>
+           </div>
+
+          <div class="wrapper">
+            <a href="zaby.html" class="button">żabki</a>
+           </div>  
+         
+		 <div class="wrapper">
+            <a href="gierka.html" class="button">nowa strona</a>
+           </div>  
+
+
+          <br>
+         <div class="obraz">
+         <img src="plankton.gif">
+          </div>
+
+
+    </div>
+</body>
+</html>
